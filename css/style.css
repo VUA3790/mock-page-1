@@ -22,10 +22,9 @@ ul.flex__box {
     margin: 0;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: center;
 }
 
-ul.flex__box li {
+ul.flex__box li, ul.flex__box_flow li {
     flex: 1 0 23%;
     border: 1px solid #c3c3c3;
     list-style: none;
@@ -40,7 +39,7 @@ ul.flex__reverse {
     flex-direction: row-reverse;
 }
 
-ul.flex__box.bg_clr_2 li{
+ul.flex__box.bg_clr_2 li, ul.flex__box_flow.bg_clr_2 li{
 	background-color: #c4c2e5;
 }
 
@@ -54,4 +53,35 @@ ul.flex__column li, ul.flex__column__reverse li {
 
 ul.flex__column__reverse {
 	flex-direction: column-reverse;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container__left {
+    flex: 0.3;
+}
+
+.flex-container__right {
+    flex: 0.68;
+}
+
+ul.flex__box_flow {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-flow:row-reverse wrap;
+    gap: 24px;
+}
+
+.flex__align_item {
+    min-height: 300px;
+    align-items: flex-end;
+    border: 1px solid #ccc;
+}
+
+.flex__align_self {
+    align-self: flex-start;
 }

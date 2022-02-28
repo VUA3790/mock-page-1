@@ -80,14 +80,58 @@
     					<li>Box 4</li>
     				</ul>
 
-    				<h2>4. The flex-direction Property - Column</h2>
+    				<h2>4. The flex-direction Property - Column reverse order</h2>
     				<ul class="flex__box bg_clr_2 flex__column__reverse">
     					<li>Box 1</li>
     					<li>Box 2</li>
     					<li>Box 3</li>
     					<li>Box 4</li>
-    				</ul>
-    		</div>
+					</ul>
+					
+					<h2>5. The flex-direction Property - Row & Column combine</h2>
+					<div class="flex-container">
+						<div class="flex-container__left">
+							<ul class="flex__box flex__column">
+								<li>Box 1</li>
+								<li>Box 2</li>
+								<li>Box 3</li>
+								<li>Box 4</li>
+								<li>Box 5</li>
+								<li>Box 6</li>
+								<li>Box 7</li>
+							</ul>
+						</div>
+						<div class="flex-container__right">
+								<ul class="flex__box">
+									<li>Box 1</li>
+									<li>Box 2</li>
+									<li>Box 3</li>
+									<li>Box 4</li>
+									<li>Box 5</li>
+									<li>Box 6</li>
+									<li>Box 7</li>			
+								</ul>
+						</div>
+					</div>
+
+					<h2>6. The flex-flow Property with Row reverse and Wrap</h2>
+					<ul class="flex__box_flow bg_clr_2">
+						<li>Box 1</li>
+						<li>Box 2</li>
+						<li>Box 3</li>
+						<li>Box 4</li>
+						<li>Box 3</li>
+						<li>Box 4</li>
+					</ul>
+
+					<h2>7. The flex-flow Property with Row reverse, Wrap, Align items and Align self</h2>
+					<ul class="flex__box_flow flex__align_item bg_clr_2">
+						<li>Box 1</li>
+						<li>Box 2</li>
+						<li class="flex__align_self">Box 3</li>
+						<li>Box 4</li>
+					</ul>
+    		</div> 
 
     	</div>
     </section>
